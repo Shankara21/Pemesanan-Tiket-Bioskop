@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* body {
+    background-color: #242333;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', 'sans-serif';
+} */
+td:nth-child(even){
+    text-align: right;
+}
+.movie-container {
+    margin: 20px 0;
+}
+
+
+.containerr {
+    perspective: 1000px;
+    width: 700px;
+}
+.seat{
+    margin: 20px 90px;
+}
+
+
+.screen {
+    background-color: #fff;
+    height: 70px;
+    width: 80%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+/* Bangku */
+.select {
+    display: flex;
+    max-width: 700px;
+}
+
+.select__item {
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Heebo", sans-serif;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid royalblue;
+    transition: background 0.5s;
+    width: 50px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.select__item:nth-of-type(2){
+    margin-right: 40px;
+}
+.select__item:nth-last-of-type(2){
+    margin-left: 40px;
+}
+/* .seat:nth-of-type(2) {
+    margin-right: 40px;
+}
+
+.seat:nth-last-of-type(2) {
+    margin-left: 40px;
+} */
+
+.select__item--selected {
+    background: royalblue;
+    color: #ffffff;
+}
